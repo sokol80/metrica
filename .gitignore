@@ -1,0 +1,51 @@
+### Системные файлы ###
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+._*
+
+### Редакторы/IDE ###
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+### Зависимости ###
+node_modules/
+bower_components/
+
+### Сборка ###
+dist/
+build/
+*.min.js
+*.min.css
+*.map
+
+### Логи ###
+*.log
+npm-debug.log*
+
+### Окружение ###
+.env
+.env.local
+.env.development
+.env.production
+
+### Изображения/шрифты ###
+*.psd
+*.ai
+*.sketch
+*.xd
+
+### Тестовые данные ###
+test_results/
+coverage/
+
+# Node.js
+package-lock.json
+yarn.lock
+.cache/
