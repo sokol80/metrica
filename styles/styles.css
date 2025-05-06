@@ -1,0 +1,158 @@
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+    color: #121212; 
+    width: 100%;
+    background: #F5F5F5;  
+}
+
+a {
+    color: inherit;           /* Наследует цвет текста от родителя */
+    text-decoration: none;    /* Убирает подчёркивание */
+    cursor: pointer;          /* Курсор-указатель (по умолчанию, но можно явно указать) */
+    background-color: transparent; /* Прозрачный фон */
+    border: none;             /* Убирает границы (если есть) */
+    outline: none;            /* Убирает контур при фокусе */
+    -webkit-tap-highlight-color: transparent; /* Убирает подсветку на мобильных */
+  }
+
+/* Стили для скрытия заголовков для доступности */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.container {
+    width: 1400px;         /* Общая ширина блока */
+    padding: 0 125px;      /* Боковые отступы (125px слева/справа) */
+    margin: 0 auto;        /* Центрирование на странице */
+    background: #FFF; 
+    
+    
+}
+
+/* Секция "Герой" */
+.hero__container {
+    
+    padding-bottom: 150px; /* Создаем отступ внутри цветного блока */  
+    
+}
+
+.hero__title {
+    width: 1000px;
+    height: 120px;
+
+    margin: 128px 0 30px 0;
+
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -3%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero__background {
+    width: 1150px;
+    height: 500px;
+    position: relative; 
+        
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%),
+        url("../resources/interior.png") center/cover no-repeat;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    border: 1px solid #000000;
+}
+
+.hero__content {
+    
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    max-width: 430px;
+    color: white;
+    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -3%;
+    color: #FFFFFF; 
+    text-shadow: 
+    1px 0 0 black,  /* Право */
+    -1px 0 0 black, /* Лево */
+    0 1px 0 black,  /* Низ */
+    0 -1px 0 black, /* Верх */
+
+    
+    
+    /* Тень */
+    0 4px 4px rgba(0, 0, 0, 1);
+    
+}
+
+/* Секция "О нас" */
+
+.about {
+    
+    padding-top: 150px; /* Компенсируем отступ */
+    margin-top: -150px; /* "Подтягиваем" секцию вверх */
+    position: relative;
+    z-index: 1; /* Поднимаем над предыдущей секцией */
+    
+    
+    
+}
+
+.about__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -3%;
+    text-transform: uppercase;
+    color: #121212;
+
+    margin-bottom: 30px;
+}
+.about__content {
+    
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 61px;
+    letter-spacing: -3%;
+    
+}
+
+.container--narrow {
+    padding-right: 135px; /* Только правый отступ по макету */
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative; /* Для позиционирования кнопки */
+  }
+
+  .hero__button {
+    display: inline-block;
+    background-color: #AD1818;
+    border-radius: 5px;
+    padding: 20px 40px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 30px;
+    max-width: calc(100% - 135px); /* Ограничение по правому padding */
+    box-sizing: border-box;
+  }
+
+  .hero__button:hover {
+    background-color: #c90b0b;
+    
+  }
