@@ -38,8 +38,20 @@ a {
     
     
 }
+/* Секция "Шапка" */
+
+.header__inner {
+  
+  padding: 0 125px;
+  margin-top: 33px;
+  margin-bottom: 70px;
+  
+}
+
+
 
 /* Секция "Герой" */
+
 
 .hero {
     padding: 0 125px;      /* Боковые отступы (125px слева/справа) */
