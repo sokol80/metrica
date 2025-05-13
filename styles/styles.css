@@ -247,3 +247,35 @@ a {
     color: #FFF;
     
   }
+
+  .services {
+    background-color: #121212;
+    padding: 150px 125px;
+
+  }
+
+  .services__title {
+    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    margin-bottom: 34px;
+    
+  }
+
+  .service-item__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    margin: 15px 0 60px;
+  }
+
+  .service-item:last-child .service-item__title {
+  margin-bottom: 0;
+}
