@@ -33,20 +33,56 @@ a {
 .container {
     width: 1400px;         /* Общая ширина блока */
     
-    margin: 0 auto;        /* Центрирование на странице */
+    margin: 0 auto; 
+    padding-top: 33px;       /* Центрирование на странице */
     background: #FFF; 
     
     
 }
+
+
 /* Секция "Шапка" */
 
+.header {
+  margin-top: 0; /* Обязательно обнуляем */
+}
+
 .header__inner {
-  
   padding: 0 125px;
-  margin-top: 33px;
-  margin-bottom: 70px;
+  font-size: 0; /* Убираем пробелы между inline-элементами */
+}
+
+.header__logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo__img {
+  display: block;
+}
+
+.header__nav {
+  display: inline-block;
+  width: calc(100% - 130px); /* Исправлено: добавлены пробелы */
+  text-align: right;
+  vertical-align: middle;
   
 }
+
+.nav__link {
+  display: inline-block;
+  margin-left: 60px; /* Отступ между ссылками */
+  vertical-align: middle;
+  font-size: 18px; /* Восстанавливаем размер шрифта */
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  color: #121212;
+
+}
+
+
+
+
 
 
 
