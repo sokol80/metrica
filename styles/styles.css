@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
@@ -55,6 +59,7 @@ a {
 .header__logo {
   display: inline-block;
   vertical-align: middle;
+  width: 127px;
 }
 
 .logo__img {
@@ -63,7 +68,7 @@ a {
 
 .header__nav {
   display: inline-block;
-  width: calc(100% - 130px); /* Исправлено: добавлены пробелы */
+  width: calc(100% - 127px); /* Исправлено: добавлены пробелы */
   text-align: right;
   vertical-align: middle;
   
@@ -78,6 +83,15 @@ a {
   letter-spacing: -0.03em;
   color: #121212;
 
+}
+
+.nav__link:hover {
+  
+  color: rgb(18, 18, 18, 0.5);
+}
+.nav__link:active {
+  text-decoration: underline;
+  color: rgb(18, 18, 18, 0.5);
 }
 
 
@@ -326,4 +340,77 @@ a {
 
   .service-item:last-child .service-item__title {
   margin-bottom: 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 717px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 40%), url('/resources/Rectangle_10.jpeg'); 
+  background-size: cover;       /* Растягиваем на всю область */
+  background-position: center;  /* Центрируем изображение */
+  background-repeat: no-repeat; /* Запрещаем повторение */
+  margin-bottom: 150px;
+    
+}
+
+.slider__title {
+  position: absolute;
+  width: 440px;
+  left: 125px;
+  bottom: 60px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  color: #FFFFFF;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+
+}
+
+.footer__contacts {
+  padding: 0 125px;
+  margin-bottom: 150px;
+}
+
+.footer__contacts:before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url('/resources/ic_outline-phone-iphone.svg');
+  margin-bottom: 12px;
+}
+
+
+.contact__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #121212;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.footer__contact-tel {
+  display: block;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #121212;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.footer__contact-mail {
+  display: block;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: rgb(18, 18, 18, 0.5);
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  margin-bottom: 30px;
 }
