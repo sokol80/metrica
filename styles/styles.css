@@ -346,7 +346,7 @@ a {
   position: relative;
   width: 100%;
   height: 717px;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 40%), url('/resources/Rectangle_10.jpeg'); 
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 40%), url('../resources/Rectangle_10.jpeg'); 
   background-size: cover;       /* Растягиваем на всю область */
   background-position: center;  /* Центрируем изображение */
   background-repeat: no-repeat; /* Запрещаем повторение */
@@ -378,7 +378,7 @@ a {
   display: block;
   width: 24px;
   height: 24px;
-  background-image: url('/resources/ic_outline-phone-iphone.svg');
+  background-image: url('../resources/ic_outline-phone-iphone.svg');
   margin-bottom: 12px;
 }
 
