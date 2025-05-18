@@ -3,47 +3,44 @@ html {
 }
 
 body {
-    font-family: "Manrope", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal; 
-    color: #121212; 
-    width: 100%;
-    background: #F5F5F5;  
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #121212;
+  width: 100%;
+  background: #f5f5f5;
 }
 
 a {
-    color: inherit;           /* Наследует цвет текста от родителя */
-    text-decoration: none;    /* Убирает подчёркивание */
-    cursor: pointer;          /* Курсор-указатель (по умолчанию, но можно явно указать) */
-    background-color: transparent; /* Прозрачный фон */
-    border: none;             /* Убирает границы (если есть) */
-    outline: none;            /* Убирает контур при фокусе */
-    -webkit-tap-highlight-color: transparent; /* Убирает подсветку на мобильных */
-  }
+  color: inherit; /* Наследует цвет текста от родителя */
+  text-decoration: none; /* Убирает подчёркивание */
+  cursor: pointer; /* Курсор-указатель (по умолчанию, но можно явно указать) */
+  background-color: transparent; /* Прозрачный фон */
+  border: none; /* Убирает границы (если есть) */
+  outline: none; /* Убирает контур при фокусе */
+  -webkit-tap-highlight-color: transparent; /* Убирает подсветку на мобильных */
+}
 
 /* Стили для скрытия заголовков для доступности */
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .container {
-    width: 1400px;         /* Общая ширина блока */
-    
-    margin: 0 auto; 
-    padding-top: 33px;       /* Центрирование на странице */
-    background: #FFF; 
-    
-    
-}
+  width: 1400px; /* Общая ширина блока */
 
+  margin: 0 auto;
+  padding-top: 33px; /* Центрирование на странице */
+  background: #fff;
+}
 
 /* Секция "Шапка" */
 
@@ -72,10 +69,7 @@ a {
   width: calc(100% - 127px); /* Исправлено: добавлены пробелы */
   text-align: right;
   vertical-align: middle;
-  
 }
-
-
 
 .nav__link {
   display: inline-block;
@@ -85,7 +79,6 @@ a {
   line-height: 25px;
   letter-spacing: -0.03em;
   color: #121212;
-
 }
 
 .nav__link:first-child {
@@ -93,7 +86,6 @@ a {
 }
 
 .nav__link:hover {
-  
   color: rgb(18, 18, 18, 0.5);
 }
 .nav__link:active {
@@ -101,107 +93,83 @@ a {
   color: rgb(18, 18, 18, 0.5);
 }
 
-
-
-
-
-
-
 /* Секция "Герой" */
 
-
 .hero {
-    padding: 0 125px;      /* Боковые отступы (125px слева/справа) */
-    margin-bottom: 150px; 
-
+  padding: 0 125px; /* Боковые отступы (125px слева/справа) */
+  margin-bottom: 150px;
 }
-
 
 .hero__title {
-    width: 1000px;
-    height: 120px;
+  width: 1000px;
+  height: 120px;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60px;
-    letter-spacing: -0.03em;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -0.03em;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
-
 .hero__background {
-    width: 1150px;
-    height: 500px;
-    position: relative; 
-        
-    background: 
-        linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%),
-        url("../resources/interior.png") center/cover no-repeat;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 1150px;
+  height: 500px;
+  position: relative;
 
-    
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("../resources/interior.png") center/cover no-repeat;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero__content {
-    
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    max-width: 430px;
-    color: white;
-    
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    letter-spacing: -0.03em;
-    color: #FFFFFF; 
-    text-shadow: 
-    1px 0 0 black,  /* Право */
-    -1px 0 0 black, /* Лево */
-    0 1px 0 black,  /* Низ */
-    0 -1px 0 black, /* Верх */
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  max-width: 430px;
+  color: white;
 
-    
-    
-    /* Тень */
-    0 4px 4px rgba(0, 0, 0, 1);
-    
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-shadow: 1px 0 0 black, /* Право */ -1px 0 0 black,
+    /* Лево */ 0 1px 0 black, /* Низ */ 0 -1px 0 black,
+    /* Верх */ /* Тень */ 0 4px 4px rgba(0, 0, 0, 1);
 }
 
 /* Секция "О нас" */
 
 .about {
-    
-    padding: 0 125px;      /* Боковые отступы (125px слева/справа) */
-    position: relative;
-    z-index: 1; /* Поднимаем над предыдущей секцией */
-    margin-bottom: 150px; 
-    
-    
-    
+  padding: 0 125px; /* Боковые отступы (125px слева/справа) */
+  position: relative;
+  z-index: 1; /* Поднимаем над предыдущей секцией */
+  margin-bottom: 150px;
 }
 
 .about__title {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: #121212;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #121212;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .about__content {
-    width: 1051px;
-    text-align: left;
-    font-weight: 400;
-    font-size: 45px;
-    line-height: 61px;
-    letter-spacing: -0.03em;
-    
+  width: 1051px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 61px;
+  letter-spacing: -0.03em;
 }
 
 .about__content p {
@@ -209,161 +177,146 @@ a {
 }
 
 .container--narrow {
-    padding-right: 135px; /* Только правый отступ по макету */
-    max-width: 1400px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    position: relative; /* Для позиционирования кнопки */
-  }
+  padding-right: 135px; /* Только правый отступ по макету */
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative; /* Для позиционирования кнопки */
+}
 
-  .about__button {
-    box-sizing: border-box;
-    display: inline-block;
-    background-color: #AD1818;
-    border-radius: 5px;
-    padding: 20px 40px;
-    font-size: 20px;
-    line-height: 27px;
-    letter-spacing: -0.03em;
-    color: #FFFFFF;
-    text-decoration: none;
-    margin-top: 30px;
-    max-width: calc(100% - 135px); /*Ограничение по правому padding */
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  }
+.about__button {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #ad1818;
+  border-radius: 5px;
+  padding: 20px 40px;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 30px;
+  max-width: calc(100% - 135px); /*Ограничение по правому padding */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-  
-
-  .about__button:hover {
-    background-color: #c90b0b;
-    
-  }
+.about__button:hover {
+  background-color: #c90b0b;
+}
 
 /* Секция "Проекты" */
 
 .projects {
-    padding: 0 125px;      /* Боковые отступы (125px слева/справа) */
-    margin-bottom: 150px; 
+  padding: 0 125px; /* Боковые отступы (125px слева/справа) */
+  margin-bottom: 150px;
 }
 
 .projects__title {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: #121212;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #121212;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .project-card {
   margin-bottom: 90px;
-
 }
 
 .project-card__img {
-	display: block;
-	margin: 15px auto;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  margin: 15px auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .project-card__title {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 41px;
-    letter-spacing: -0.03em;
-    
-    color: #121212;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  letter-spacing: -0.03em;
 
-    margin-bottom: 15px;
-	
+  color: #121212;
+
+  margin-bottom: 15px;
 }
 
 .project-card__link {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    letter-spacing: -0.03em;
-    color: #AD1818;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.03em;
+  color: #ad1818;
 }
 
 .project-card__link:after {
+  content: "→";
+  display: inline-block;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
 
-    content: "→";
-    display: inline-block;
-    margin-left: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .project-card__link:hover::after {
-    transform: translateX(4px);
-  }
+.project-card__link:hover::after {
+  transform: translateX(4px);
+}
 
- 
+.projects__all-link {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 
-  .projects__all-link {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    
-    border: 1px #AD1818 solid;
-    border-radius: 5px;
-    font-size: 30px;
-    line-height: 41px;
-    color: #AD1818;
-    letter-spacing: -0.03em;
-    text-decoration: none;
-    padding: 56px 0;
-    max-width: 100%; /* Ограничение по правому padding */
-    box-sizing: border-box;
-    
-    
-  }
+  border: 1px #ad1818 solid;
+  border-radius: 5px;
+  font-size: 30px;
+  line-height: 41px;
+  color: #ad1818;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  padding: 56px 0;
+  max-width: 100%; /* Ограничение по правому padding */
+  box-sizing: border-box;
+}
 
-  .projects__all-link:hover {
-    background-color: #AD1818;
-    color: #FFF;
-    
-  }
+.projects__all-link:hover {
+  background-color: #ad1818;
+  color: #fff;
+}
 
-  .services {
-    background-color: #121212;
-    padding: 150px 125px;
+.services {
+  background-color: #121212;
+  padding: 150px 125px;
+}
 
-  }
+.services__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  margin-bottom: 34px;
+}
 
-  .services__title {
-    
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FFFFFF;
-    letter-spacing: -0.03em;
-    text-decoration: none;
-    margin-bottom: 34px;
-    
-  }
+.service-item {
+  margin-bottom: 60px;
+}
+.servises__img {
+  margin-bottom: 13px;
+}
+.service-item__title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  margin-left: 3px;
+}
 
-  .service-item {
-    margin-bottom: 60px;
-  }
-  .servises__img {
-    margin-bottom: 13px;
-
-  }
-  .service-item__title {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 41px;
-    color: #FFFFFF;
-    letter-spacing: -0.03em;
-    text-decoration: none;
-    margin-left: 3px;
-  }
-
-  .service-item:last-child {
+.service-item:last-child {
   margin-bottom: 0;
 }
 
@@ -371,12 +324,16 @@ a {
   position: relative;
   width: 100%;
   height: 717px;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 40%), url('../resources/Rectangle_10.jpeg'); 
-  background-size: cover;       /* Растягиваем на всю область */
-  background-position: center;  /* Центрируем изображение */
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 40%
+    ),
+    url("../resources/Rectangle_10.jpeg");
+  background-size: cover; /* Растягиваем на всю область */
+  background-position: center; /* Центрируем изображение */
   background-repeat: no-repeat; /* Запрещаем повторение */
   margin-bottom: 150px;
-    
 }
 
 .slider__title {
@@ -387,10 +344,9 @@ a {
   font-weight: 400;
   font-size: 30px;
   line-height: 41px;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: -0.03em;
   text-decoration: none;
-
 }
 
 .footer__contacts {
@@ -399,15 +355,14 @@ a {
 }
 
 .footer__contacts:before {
-  content: '';
+  content: "";
   display: block;
   width: 24px;
   height: 24px;
   margin-left: -5px;
-  background-image: url('../resources/ic_outline-phone-iphone.svg');
+  background-image: url("../resources/ic_outline-phone-iphone.svg");
   margin-bottom: 12px;
 }
-
 
 .contact__title {
   font-weight: 400;
@@ -442,36 +397,28 @@ a {
   padding-bottom: 9px;
 }
 
-
 .footer__inner {
   padding: 60px 125px 30px;
   background-color: #121212;
   text-align: center;
-  
 }
 
 .footer__nav {
-  
-  
   margin-bottom: 87px;
-  
 }
 
-
 .footer__link {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__link:hover {
   color: rgb(255, 255, 255, 0.5);
 }
 
-
-
 .footer__copy {
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: -0.03em;  
+  letter-spacing: -0.03em;
   color: rgb(255, 255, 255, 0.5);
 }
