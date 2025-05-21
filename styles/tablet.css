@@ -4,16 +4,93 @@
   }
 
   .hero__title {
-    width: 1000px;
-    height: 120px;
-
-    margin-bottom: 30px;
-
-    font-weight: 400;
     font-size: 50px;
     line-height: 60px;
-    letter-spacing: -0.03em;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .header__container {
+    padding-top: 33px;
+    padding-bottom: 74px;
+  }
+
+  .hero__container {
+    padding-bottom: 120px;
+  }
+  .hero__background {
+    width: 100%;
+    max-width: 100%;
+
+    height: 400px;
+  }
+
+  .hero__content {
+    bottom: 30px;
+    left: 42px;
+
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .about__container {
+    padding-bottom: 120px;
+  }
+
+  .about__content {
+    max-width: 690px;
+
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  .container__projects {
+    padding-bottom: 100px;
+  }
+  .project-card {
+    margin-bottom: 80px;
+  }
+
+  .project-card__img {
+    width: 100%;
+    max-width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .project-card__title {
+    font-size: 25x;
+    line-height: 34px;
+    margin-bottom: 10px;
+  }
+
+  .services__container {
+    padding-top: 150px;
+    padding-bottom: 120px;
+  }
+
+  .service-item__title {
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .contacts__container {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .footer__contact-tel {
+    font-size: 45px;
+    line-height: 60px;
+
+    margin-bottom: 30px;
+  }
+
+  .footer__contact-mail {
+    font-size: 45px;
+    line-height: 60px;
+
+    padding-bottom: 9px;
   }
 
   /* @media (max-width: 959px) */
