@@ -3,6 +3,10 @@
     padding: 0 12px; /* Ещё более компактные отступы для мобильных */
   }
 
+  .header__nav {
+    display: none;
+  }
+
   .hero__title {
     font-size: 30px;
     line-height: 32px;
@@ -106,6 +110,15 @@
     margin-bottom: 20px;
   }
 
+  .services__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 104px;
+  }
+
+  .service-item {
+    width: 100%;
+  }
   .service-item__title {
     font-size: 18px;
     line-height: 25px;

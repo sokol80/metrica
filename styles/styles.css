@@ -52,22 +52,31 @@ body {
 .header__container {
   padding-top: 33px;
   padding-bottom: 70px;
-}
-
-.header__logo {
-  display: inline-block;
-  vertical-align: middle;
-  width: 127px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo__img {
   display: block;
 }
 
-.header__nav {
+.nav__list {
+  display: flex;
+  gap: 60px; /* расстояние между пунктами меню */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  display: block;
 }
 
 .nav__link {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
 }
 
 .nav__link:first-child {
@@ -268,7 +277,7 @@ body {
   color: #ad1818;
   letter-spacing: -0.03em;
   text-decoration: none;
-  padding: 56px 0;
+  padding: 56px 0 53px;
   max-width: 100%; /* Ограничение по правому padding */
   box-sizing: border-box;
 }
@@ -293,16 +302,38 @@ body {
   margin-bottom: 30px;
 }
 
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  row-gap: 80px;
+  /* gap: 80px 11px; */
+  margin-bottom: 104px;
+}
+
 .service-item {
-  margin-bottom: 60px;
+  width: calc(50% - 5px);
 }
+
 .services__img {
-  display: block;
+  /* Улучшенное отображение */
+  display: block; /* Убирает лишние отступы */
+  overflow: hidden;
+  /* Абсолютно точные размеры */
+  width: 100%;
   max-width: 100%;
-  height: auto;
-  margin-bottom: 13px;
+  object-fit: contain;
+  object-position: center center; /* Чёткое позиционирование */
+  /* Убирает возможные артефакты */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  margin-bottom: 25px;
 }
+
 .service-item__title {
+  height: 41px; /* Фиксируем высоту текста */
+  overflow: hidden; /* На случай длинных названий */
   font-weight: 400;
   font-size: 30px;
   line-height: 41px;
@@ -312,8 +343,23 @@ body {
   margin-left: 3px;
 }
 
-.service-item:last-child {
-  margin-bottom: 0;
+.services__btn {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 56px 0 55px;
+
+  margin: 0 auto;
+  text-align: center;
+
+  border: 1px #ad1818 solid;
+  background-color: #ad1818;
+  border-radius: 5px;
+  font-size: 30px;
+  line-height: 41px;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  text-decoration: none;
 }
 
 .slider__container {
