@@ -110,11 +110,11 @@
     margin-bottom: 20px;
   }
 
-  .services__list {
+  /* .services__list {
     flex-direction: column;
     flex-wrap: nowrap;
     margin-bottom: 104px;
-  }
+  } */
 
   .service-item {
     width: 100%;

@@ -314,8 +314,26 @@ body {
 
 .service-item {
   width: calc(50% - 5px);
+  position: relative;
 }
 
+.service__label {
+  position: absolute;
+  top: 32px;
+  left: 30px;
+
+  height: 40px;
+  background-color: #ad1818;
+  border-radius: 5px;
+  padding: 5px 22px 5px 20px;
+}
+
+.service__label-text {
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+}
 .services__img {
   /* Улучшенное отображение */
   display: block; /* Убирает лишние отступы */
@@ -360,6 +378,52 @@ body {
   color: #ffffff;
   letter-spacing: -0.02em;
   text-decoration: none;
+}
+
+.testimonials__container {
+  padding: 150px 125px;
+}
+
+.testimonial__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial__row:first-of-type {
+  margin-bottom: 50px;
+}
+
+.testimonial__column {
+  width: calc(50% - 25px);
+}
+.testimonials__title {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #000000;
+
+  margin-bottom: 30px;
+}
+.testimonial__title {
+  font-size: 45px;
+  line-height: 61px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #000000;
+
+  margin-bottom: 14px;
+}
+.testimonial__content {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.testimonial__column--wide {
+  flex: none; /* Отключаем растягивание/сжатие */
+  width: 861px; /* Фиксированная ширина */
 }
 
 .slider__container {
