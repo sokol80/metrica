@@ -144,3 +144,12 @@ a {
   outline: none; /* Убирает контур при фокусе */
   -webkit-tap-highlight-color: transparent; /* Убирает подсветку на мобильных */
 }
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}

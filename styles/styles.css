@@ -229,9 +229,12 @@ body {
 
 .project-card__img {
   display: block;
-
+  height: 450px;
   max-width: 100%;
-  height: auto;
+  width: 100%;
+  object-fit: cover;
+  object-position: left bottom;
+
   margin-bottom: 15px;
 }
 
@@ -381,7 +384,7 @@ body {
 }
 
 .testimonials__container {
-  padding: 150px 125px;
+  padding: 150px 170px 150px 125px;
 }
 
 .testimonial__row {
@@ -390,7 +393,7 @@ body {
 }
 
 .testimonial__row:first-of-type {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .testimonial__column {
@@ -409,7 +412,7 @@ body {
   font-size: 45px;
   line-height: 61px;
   letter-spacing: -0.03em;
-  text-transform: uppercase;
+
   color: #000000;
 
   margin-bottom: 14px;
@@ -418,21 +421,85 @@ body {
   font-size: 22px;
   line-height: 30px;
   letter-spacing: -0.03em;
-  text-transform: uppercase;
+
   color: #000000;
 }
 .testimonial__column--wide {
   flex: none; /* Отключаем растягивание/сжатие */
-  width: 861px; /* Фиксированная ширина */
+  width: 860px; /* Фиксированная ширина */
 }
 
-.slider__container {
+.gallery__container {
   padding: 0;
-  aspect-ratio: 1400 / 717;
-  height: auto;
-  position: relative;
-  background: url("../resources/Rectangle_10.jpeg") center/cover no-repeat;
 }
+.gallery {
+  position: relative;
+  height: 717px;
+}
+
+.gallery__control-btn {
+  z-index: 11;
+  position: absolute;
+  left: 115px;
+  bottom: 162px;
+}
+
+.gallery__control-prev {
+  width: 40px;
+  height: 40px;
+}
+.gallery__control-next {
+  width: 40px;
+  height: 40px;
+}
+.gallery__control-img {
+  opacity: 0.25;
+}
+.gallery__control-img:hover {
+  opacity: 1;
+}
+
+.gallery__title {
+  position: absolute;
+  z-index: 9;
+  top: 67px;
+  left: 124px;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.gallery__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.gallery__slide_active {
+  opacity: 1;
+}
+
+.slide-title {
+  position: absolute;
+  bottom: 60px;
+  left: 125px;
+  max-width: 433px;
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 41px;
+  letter-spacing: -0.03em;
+}
+
+.slide-img {
+  max-width: 1400px;
+  width: 100%;
+}
+/* Контакты    */
 
 .contacts__container {
   width: 100%;
@@ -440,74 +507,108 @@ body {
   padding-bottom: 150px;
 }
 
-.footer__contacts {
-  padding-bottom: 150px;
-}
-
-.footer__contacts:before {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 24px;
-  margin-left: -5px;
-  background-image: url("../resources/ic_outline-phone-iphone.svg");
-  margin-bottom: 12px;
-}
-
-.contact__title {
+.contacts__title {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   color: #121212;
   letter-spacing: -0.03em;
   text-decoration: none;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
-.footer__contact-tel {
+.contacts__wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-tel {
   display: block;
   font-weight: 400;
   font-size: 60px;
   line-height: 60px;
   color: #121212;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   text-decoration: none;
-  margin-bottom: 30px;
+  margin-right: 105px;
 }
 
-.footer__contact-mail {
-  display: inline-block;
+.contact-tel:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: -5px;
+  background-image: url("../resources/ic_outline-phone-iphone.svg");
+  margin-bottom: 28px;
+}
+
+.contact-mail {
+  display: block;
   font-weight: 400;
   font-size: 60px;
   line-height: 60px;
   color: rgb(18, 18, 18, 0.5);
   letter-spacing: -0.03em;
   text-decoration: none;
-  border-bottom: 2px solid rgb(18, 18, 18, 0.5);
+  border-bottom: 3px solid rgb(18, 18, 18, 0.5);
   padding-bottom: 9px;
+  padding-left: 0;
+  margin-left: 0;
 }
+
+.contact-mail:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  padding-left: 0;
+  margin-left: 2px;
+  background-image: url("../resources/material-symbols_mail-outline-rounded.svg");
+  margin-bottom: 16px;
+}
+
+/*    Подвал     */
 
 .footer__container {
   background-color: #121212;
   padding: 60px 125px 30px;
 }
 
-.footer__inner {
-  padding: 60px 0 30px;
-  background-color: #121212;
-  text-align: center;
-}
-
 .footer__nav {
   margin-bottom: 87px;
 }
 
+.footer__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px; /* расстояние между пунктами меню */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__nav-item {
+  display: block;
+}
+
 .footer__link {
   color: #ffffff;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
 }
 
 .footer__link:hover {
   color: rgb(255, 255, 255, 0.5);
+}
+.footer__link:active {
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.footer__bottom {
+  text-align: center;
 }
 
 .footer__copy {

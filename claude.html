@@ -23,10 +23,14 @@
     <link rel="canonical" href="https://metrica-design.ru/" />
     <link rel="icon" href="favicon.ico" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Metrica — студия дизайна интерьеров</title>
 
     <!-- Предзагрузка важных ресурсов -->
-    <link
+    <!-- <link
       rel="preload"
       href="fonts/gilroy-bold.woff2"
       as="font"
@@ -35,10 +39,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+     -->
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/tablet.css" />
@@ -119,10 +120,7 @@
             </h1>
             <div class="hero__background">
               <div class="hero__content">
-                <p class="hero__description">
-                  Мы — команда квалифицированных дизайнеров и архитекторов,
-                  занимающихся разработкой и реализацией дизайн-проектов
-                </p>
+                <p class="hero__description">Мы - команда квалифицированных дизайнеров и архитекторов, занимающихся разработкой и реализацией дизайн-проектов</p>
               </div>
             </div>
           </div>
@@ -156,7 +154,7 @@
                 <figure class="project-card__figure">
                   <img
                     class="project-card__img"
-                    src="resources/pravoberjny.jpeg"
+                    src="resources/Rectangle 6.jpeg"
                     alt="Интерьер квартиры в ЖК Правобережный"
                     width="1150"
                     height="450"
@@ -287,7 +285,7 @@
         <!-- Секция "Отзывы" -->
         <section class="testimonials">
           <div class="container testimonials__container">
-            <h2 class="testimonials__title">УСЛУГИ</h2>
+            <h2 class="testimonials__title">ОТЗЫВЫ</h2>
             <div class="testimonial__row">
               <div class="testimonial__column">
                 <h3 class="testimonial__title">Ксения, проект 65 кв.м.</h3>
@@ -308,126 +306,84 @@
         </section>
 
         <!-- Секция "Слайдер" -->
-        <section class="slider section">
-          <div class="container slider__container">
-            <button
-              class="slider__button slider__button--prev"
-              aria-label="Предыдущий слайд"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15 18L9 12L15 6"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-            <div class="slider__track">
-              <div class="slider__slide">
-                <!-- Содержимое слайда -->
-                <img
-                  src="resources/slider-1.jpg"
-                  alt="Интерьер гостиной"
-                  class="slider__image"
-                  width="960"
-                  height="500"
-                  loading="lazy"
-                />
+        <section class="gallery-section">
+          <div class="container gallery__container">
+            <div class="gallery">
+              <h2 class="gallery__title">ГАЛЕРЕЯ ПРОЕКТОВ</h2>
+              <div class="gallery__slides">
+                <div class="gallery__slide gallery__slide_active">
+                  <img src="resources/Rectangle 10.jpeg" 
+                  alt="" 
+                  class="slide-img" 
+                  width="1400"
+                    height="717"
+                    loading="lazy">
+                    <h3 class="slide-title">Проект  двухкомнтаной квартиры в ЖК Лесной Пейзаж</h3>
+                </div>
+                <div class="gallery__slide">
+                  <img src="resources/Rectangle 11.jpeg" 
+                  alt="" 
+                  class="slide-img" 
+                  width="1400"
+                    height="717"
+                    loading="lazy">
+                    <h3 class="slide-title">Проект гостиной в ЖК Маяк</h3>
+                </div>
+                <div class="gallery__slide">
+                  <img src="resources/Rectangle 12.jpeg" 
+                  alt="" 
+                  class="slide-img" 
+                  width="1400"
+                    height="717"
+                    loading="lazy">
+                    <h3 class="slide-title">Визуализация кухни-гостиной в частном доме</h3>
+                </div>
+                <div class="gallery__slide">
+                  <img src="resources/Rectangle 13.jpeg" 
+                  alt="" 
+                  class="slide-img" 
+                  width="1400"
+                    height="717"
+                    loading="lazy">
+                    <h3 class="slide-title">Проект кухни в скандинавском стиле для ЖК Северный Ветер</h3>
+                </div>
               </div>
-              <!-- Дополнительные слайды -->
+              <div class="gallery__control-btn">
+                <button class="gallery__control-prev">
+                <img class="gallery__control-img" src="resources/ic_baseline-arrow-back-ios-new.svg" alt="">
+              </button>
+              <button class="gallery__control-next">
+                <img class="gallery__control-img" src="resources/ic_baseline-arrow-next-ios-new.svg" alt="">
+              </button>
+              </div>
+              
+
             </div>
-            <button
-              class="slider__button slider__button--next"
-              aria-label="Следующий слайд"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9 6L15 12L9 18"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-            <div class="slider__pagination" aria-label="Навигация по слайдам">
-              <!-- Пагинация слайдера -->
-            </div>
-            <h2 class="slider__title">
-              Проект двухкомнатной квартиры в ЖК Лесной пейзаж
-            </h2>
+            
           </div>
-          <div class="container"></div>
-        </section>
-      </main>
+                  </section>
+      
 
       <!-- Контакты -->
       <section id="contacts" class="contacts">
         <div class="container contacts__container">
-          <h2 class="section__title contacts__title">КОНТАКТЫ</h2>
-          <address class="contacts__address">
-            <a href="tel:+79358954535" class="footer__contact-tel"
+          <h2 class="contacts__title">КОНТАКТЫ</h2>
+          <address class="contacts__wrapper">
+            <a href="tel:+79358954535" class="contact-tel"
               >+7 935 895-45-35</a
             >
             <a
               href="mailto:hello@metrica-design.ru"
-              class="footer__contact-mail"
+              class="contact-mail"
               >hello@mail.com</a
             >
-            <p class="contacts__location">
-              Москва, ул. Дизайнерская, д. 10, офис 205
-            </p>
+            
           </address>
-          <div class="contacts__social">
-            <a
-              href="https://vk.com/"
-              class="social__link"
-              target="_blank"
-              rel="noopener"
-              aria-label="Мы ВКонтакте"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <!-- Иконка ВК -->
-              </svg>
-            </a>
-            <a
-              href="https://t.me/"
-              class="social__link"
-              target="_blank"
-              rel="noopener"
-              aria-label="Наш Телеграм"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <!-- Иконка Телеграм -->
-              </svg>
-            </a>
-          </div>
+         
         </div>
       </section>
+
+      </main>
 
       <!-- Подвал сайта -->
       <footer id="footer" class="footer">
@@ -456,9 +412,6 @@
             <p class="footer__copy">
               &copy; Cтудия дизайна интерьера Метрика — 2023
             </p>
-            <a href="privacy-policy.html" class="footer__policy"
-              >Политика конфиденциальности</a
-            >
           </div>
         </div>
       </footer>
@@ -466,6 +419,6 @@
     </div>
 
     <!-- Скрипты -->
-    <script src="js/main.js" defer></script>
+    <script src="scripts/gallery.js" defer></script>
   </body>
 </html>
