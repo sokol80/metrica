@@ -46,6 +46,25 @@
     <link rel="stylesheet" href="styles/phone.css" />
   </head>
   <body>
+     <!-- Popup размещается здесь -->
+  <div class="js-popup popup-overlay">
+    <div class="js-popup__content popup ">
+      <button class="js-popup__close-btn close-popup">
+        <img src="resources/radix-icons_cross-2.svg" alt="кнопка закрытия попап окна">
+      </button>
+      <p class="popup__title">Заказать услугу</p>
+      <p class="popup__content">Заполните форму, мы свяжемся с вами в течение суток
+</p>
+<form class="form" method="GET">
+	<input class="input" type="text" placeholder="Имя">
+  <input class="input" type="text" placeholder="Электронная почта">
+  <input class="input" type="text" placeholder="Номер телефона">
+	
+	<input class="input-btn" type="submit">
+</form>
+      
+    </div>
+  </div>
     <div class="page-wrapper">
       <!-- Шапка сайта -->
       <header class="header">
@@ -77,19 +96,7 @@
             </ul>
           </nav>
           <!-- Мобильное меню -->
-          <button
-            class="mobile-menu-toggle"
-            aria-label="Открыть меню"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-            type="button"
-          >
-            <span class="hamburger-icon"></span>
-          </button>
-        </div>
-      </header>
-
-      <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+           <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
         <div class="container">
           <nav class="mobile-menu__nav">
             <ul class="mobile-menu__list">
@@ -109,6 +116,18 @@
           </nav>
         </div>
       </div>
+          <button class="burger-btn" aria-label="Меню">
+  <svg class="burger-icon" viewBox="0 0 50 8" width="50" height="8">
+    <!-- Верхняя полоска (50x2) -->
+    <rect width="50" height="2" y="0" fill="currentColor"/>
+    <!-- Нижняя полоска (31x2) с отступом 4px -->
+    <rect width="31" height="2" x="19" y="6" fill="currentColor"/>
+  </svg>
+</button>
+        </div>
+      </header>
+
+      
 
       <!-- Основной контент -->
       <main class="main">
@@ -172,7 +191,7 @@
                 <figure class="project-card__figure">
                   <img
                     class="project-card__img"
-                    src="resources/norvegky_park.jpeg"
+                    src="resources/Rectangle 7.jpeg"
                     alt="Интерьер квартиры в ЖК Норвежский парк"
                     width="1150"
                     height="450"
@@ -190,7 +209,7 @@
                 <figure class="project-card__figure">
                   <img
                     class="project-card__img"
-                    src="resources/sosnovskye_ozyora.jpeg"
+                    src="resources/Rectangle 8.jpeg"
                     alt="Интерьер квартиры в ЖК Сосновские озера"
                     width="1150"
                     height="450"
@@ -278,7 +297,7 @@
                 <h3 class="service-item__title">Комплектация</h3>
               </div>
             </div>
-            <button class="services__btn">Заказать услугу</button>
+            <button class="services__btn js-btn">Заказать услугу</button>
           </div>
         </section>
 
@@ -420,5 +439,6 @@
 
     <!-- Скрипты -->
     <script src="scripts/gallery.js" defer></script>
+    <script src="scripts/popup.js"></script>
   </body>
 </html>

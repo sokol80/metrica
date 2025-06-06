@@ -7,10 +7,21 @@
     display: none;
   }
 
+  /* Mobile menu */
+  .burger-btn {
+    display: block;
+    margin-top: -33px;
+  }
+
+  .mobile-menu,
+  .mobile-menu-toggle {
+    display: none;
+  }
+
   .hero__title {
     max-width: 802px;
     font-size: 50px;
-    line-height: 60px;
+    line-height: 58px;
   }
 
   .header__container {
@@ -55,14 +66,24 @@
   .container__projects {
     padding-bottom: 100px;
   }
+
   .project-card {
     margin-bottom: 80px;
   }
 
+  .project-card:last-of-type {
+    margin-bottom: 101px;
+  }
+
   .project-card__title {
-    font-size: 25x;
+    font-size: 25px;
     line-height: 34px;
     margin-bottom: 10px;
+  }
+
+  .services__list {
+    row-gap: 72px;
+    margin-bottom: 70px;
   }
 
   .services__container {
@@ -75,10 +96,83 @@
     line-height: 34px;
   }
 
-  /* .gallery {
-    position: relative;
+  .services__img {
+    width: 460px;
+    height: 315px;
+    margin-bottom: 17px;
+  }
+
+  .service__label {
+    position: absolute;
+    top: 31px;
+    left: 32px;
+
+    height: 40px;
+    background-color: #ad1818;
+    border-radius: 5px;
+    padding: 7px 26px 6px 27px;
+  }
+  .service__label-text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .testimonials__container {
+    padding: 120px 15px;
+  }
+
+  .testimonial__column {
+    width: calc(50% - 5px);
+  }
+
+  .testimonial__column--wide {
+    flex: none; /* Отключаем растягивание/сжатие */
+    width: 694px; /* Фиксированная ширина */
+  }
+  .testimonial__title {
+    font-size: 35px;
+    line-height: 48px;
+    margin-bottom: 25px;
+  }
+  .testimonial__content {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .gallery {
     height: 536px;
-  } */
+  }
+
+  .gallery__control-btn {
+    left: 41px;
+    bottom: 152px;
+  }
+
+  .gallery__control-prev {
+    margin-right: 14px;
+  }
+  .gallery__title {
+    top: 80px;
+    left: 50px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .gallery__container {
+    padding: 0;
+  }
+
+  .slide-img {
+    height: 536px;
+    width: 100%;
+  }
+
+  .slide-title {
+    bottom: 80px;
+    left: 50px;
+    font-size: 25px;
+    line-height: 34px;
+    max-width: 360px;
+  }
 
   .contacts__container {
     width: 100%;
@@ -86,18 +180,26 @@
     padding-bottom: 120px;
   }
 
-  .footer__contact-tel {
+  .contact-tel {
     font-size: 45px;
     line-height: 60px;
-
-    margin-bottom: 30px;
+    margin-right: 117px;
   }
 
-  .footer__contact-mail {
+  .contact-mail {
     font-size: 45px;
     line-height: 60px;
+    padding-bottom: 0px;
+    border-width: 2px;
+  }
 
-    padding-bottom: 9px;
+  .footer__container {
+    padding: 45px 0 30px 0;
+  }
+
+  .footer__link {
+    font-size: 18px;
+    line-height: 25px;
   }
 
   /* @media (max-width: 959px) */
