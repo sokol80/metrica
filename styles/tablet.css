@@ -10,12 +10,8 @@
   /* Mobile menu */
   .burger-btn {
     display: block;
-    margin-top: -33px;
-  }
-
-  .mobile-menu,
-  .mobile-menu-toggle {
-    display: none;
+    top: -13px;
+    right: 0;
   }
 
   .hero__title {

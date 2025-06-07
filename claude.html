@@ -96,34 +96,53 @@
             </ul>
           </nav>
           <!-- Мобильное меню -->
-           <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-        <div class="container">
-          <nav class="mobile-menu__nav">
-            <ul class="mobile-menu__list">
-              <li class="mobile-menu__item">
-                <a href="#about" class="mobile-menu__link">О НАС</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a href="#projects" class="mobile-menu__link">ПРОЕКТЫ</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a href="#services" class="mobile-menu__link">УСЛУГИ</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a href="#contacts" class="mobile-menu__link">КОНТАКТЫ</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="js-burger burger">
+            <div class="js-burger__content burger__content">
+              <a href="/" class="burger__logo" aria-label="Логотип студии Metrica">
+            <img
+              src="resources/logo_metrika.png"
+              alt="Логотип Metrica"
+              width="128"
+              height="23"
+              class="logo__img"
+            />
+          </a>
+              <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                  <li class="mobile-menu__item">
+                    <a href="#about" class="mobile-menu__link">О НАС</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a href="#projects" class="mobile-menu__link">ПРОЕКТЫ</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a href="#services" class="mobile-menu__link">УСЛУГИ</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a href="#contacts" class="mobile-menu__link">КОНТАКТЫ</a>
+                  </li>
+                </ul>
+              </nav>          
+                
+                <address class="burger__contacts-wrapper">
+                  <p class="burger__contacts-description">для связи:</p>
+            <a href="tel:+79358954535" class="burger__contact-tel"
+              >+7 935 895-45-35</a
+            >
+            <a
+              href="mailto:hello@metrica-design.ru"
+              class="burger__contact-mail"
+              >hello@mail.com</a
+            >
+            
+          </address>
+              
+            </div>
         </div>
-      </div>
-          <button class="burger-btn" aria-label="Меню">
-  <svg class="burger-icon" viewBox="0 0 50 8" width="50" height="8">
-    <!-- Верхняя полоска (50x2) -->
-    <rect width="50" height="2" y="0" fill="currentColor"/>
-    <!-- Нижняя полоска (31x2) с отступом 4px -->
-    <rect width="31" height="2" x="19" y="6" fill="currentColor"/>
-  </svg>
-</button>
+      <!-- Кнопка бургер -->
+      <button class="js-burger-btn burger-btn" aria-label="Меню">
+          <span class="burger-btn__inner"></span>
+      </button>
         </div>
       </header>
 
@@ -438,7 +457,8 @@
     </div>
 
     <!-- Скрипты -->
-    <script src="scripts/gallery.js" defer></script>
+    <script src="scripts/burger.js"></script>
     <script src="scripts/popup.js"></script>
+    <script src="scripts/gallery.js" defer></script>
   </body>
 </html>

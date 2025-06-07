@@ -47,6 +47,12 @@
     margin-bottom: 0;
   }
 
+  .burger-btn {
+    display: block;
+    top: 0;
+    right: 0;
+  }
+
   /*--------------------------------------------*/
 
   .container {
